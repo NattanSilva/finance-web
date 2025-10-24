@@ -1,10 +1,11 @@
 import FinanceList from '@/components/FinanceList'
+import { Footer } from '@/components/Footer'
 import { Regist } from '@/components/Regist'
 
 export default function Home() {
   return (
     <main className='flex w-full justify-center py-4'>
-      <section className='w-4/5 rounded-md border border-zinc-600 py-4'>
+      <section className='flex w-4/5 flex-col rounded-md border border-zinc-600 pt-4'>
         <div className='flex w-full gap-3 border-zinc-600 border-b px-2 pb-3'>
           <Regist />
           <h3 className='mr-4 flex-1 text-right font-bold text-gray-300 text-xl shadow'>
@@ -56,6 +57,7 @@ export default function Home() {
             },
           ]}
         />
+        <Footer />
       </section>
     </main>
   )

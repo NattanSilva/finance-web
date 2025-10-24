@@ -17,9 +17,12 @@ export default function FinanceTable({
   finances,
 }: Readonly<FinanceTableProps>) {
   return (
-    <ul className='flex w-full flex-col divide-y divide-zinc-600 border-zinc-600 border-b'>
+    <ul className='flex flex-1 flex-col border-zinc-600 border-b'>
       {finances.map((finance) => (
-        <li key={randomUUID()} className='flex h-10 w-full'>
+        <li
+          key={randomUUID()}
+          className='flex h-10 w-full border-zinc-600 border-b'
+        >
           <p className='flex h-full w-2/5 items-center justify-center border-zinc-600 border-l'>
             <span className='max-w-[95%] truncate'>{finance.action}</span>
           </p>
